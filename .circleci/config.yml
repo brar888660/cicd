@@ -1,9 +1,9 @@
 version: 2.0
 
 jobs:
-  myjob:
-    bulid:
-      machine: true
-      steps:
-        -run: 
-          command: npm test
+  bulid:
+    machine: true
+    steps:
+      - checkout
+      - run: 
+        command: npm test
