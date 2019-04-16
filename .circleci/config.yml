@@ -5,4 +5,5 @@ jobs:
     bulid:
       machine: true
       steps:
-        - run: npm test
+        - run: 
+          command: npm test
