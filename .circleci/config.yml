@@ -7,16 +7,3 @@ jobs:
       - checkout
       - run: 
         command: npm test
-
-
-workflows:
-  version: 2
-  build-deploy:
-  jobs:
-    build:
-      requires:
-        - build
-      branches:
-        only:
-          - master
-          - /rc-.*/
